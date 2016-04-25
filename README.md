@@ -5,7 +5,8 @@ The goal of this project is develop secure, light weight and fast prototype webs
 ## Features
 
 * CRUD operation to frogs and ponds.
-*
+* Simple unit tests.
+* PSR-2 coding standard.
 
 ## Technologies
 
@@ -14,13 +15,20 @@ The goal of this project is develop secure, light weight and fast prototype webs
 * Bootstrap. For responsive website.
 * Plain PHP PDO. Oh, we can add ORM/NoSQL later on ;p
 
+## Requirement
+
+* PHP 5.5.0 or above.
+* Composer installed as global.
+
 ## Installation
 
     $ git clone https://github.com/jewei/Frognation.git
-    $ cd frognation
+    $ cd Frognation
     $ composer install
 
 #### Import the DB
+
+Let say we create a new database called `frognation`.
 
     mysql> create database frognation;
     $ mysql -u username -p frognation < dump.sql
@@ -33,8 +41,8 @@ Copy the environment file and config the database credentials.
 
 ## Testing and Code sniffing
 
-    $ phpunit
-    $ phpcs --standard=PSR2 src/
+    $ composer run-script phpunit
+    $ composer run-script phpcs
 
 ## Usage
 
@@ -42,4 +50,10 @@ The easiest way is to run Frognation on PHP's built-in web server.
 
     $ php -S localhost:8000 -t public/
 
-You can use any port you like, then spin up a web browser and head to http://localhost:8000.
+You can use any port you like, then spin up a web browser and head to [http://localhost:8000](http://localhost:8000).
+
+## Screenshots
+
+![Ponds Listing](https://raw.githubusercontent.com/jewei/Frognation/master/resources/all_ponds.png)
+
+![A Pond](https://raw.githubusercontent.com/jewei/Frognation/master/resources/pond.png)
