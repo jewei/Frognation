@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jewei/Frognation.svg?branch=master)](https://travis-ci.org/jewei/Frognation)
+
 # Frognation
 
 The goal of this project is develop secure, light weight and fast prototype website for managing frogs and ponds.
